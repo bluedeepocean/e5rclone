@@ -3,6 +3,7 @@
 孪生项目：[E5-Rclone-Gist-Actions（Gist版）](https://github.com/ChirmyRam/E5-Rclone-Gist-Actions)，配置繁琐。
 
 > 基本原理：在Actions中每天自动使用Rclone调用OneDrive使Office E5订阅保持活跃，玄学续期，不保证百分百成功。
+> **由于我自己同时用了多种续订工具，所以并不清除能否只靠本项目续订！**
 
 基于原项目[E5-Rclone-Actions](https://github.com/peng4740/E5-Rclone-Actions)进一步改良，原项目在secret填入rclone配置文件后无法更新配置文件，尽管rclone获取的token有效期挺长的，但重新配置一次还是得花一点时间。
 
