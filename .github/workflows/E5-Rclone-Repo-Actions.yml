@@ -1,4 +1,4 @@
-name: E5-Rclone-Zip-Actions
+name: E5-Rclone-Repo-Actions
 
 on:
   push:
@@ -34,10 +34,10 @@ jobs:
           # 列出文件(此处不展示)
           echo "列出文件(此处不展示)"
           rclone lsd e5:/ > "lsd.log"
-          rclone mkdir e5:/E5-Rclone-Zip-Actions/
-          rclone move lsd.log e5:/E5-Rclone-Zip-Actions/
-          rclone delete e5:/E5-Rclone-Zip-Actions/lsd.log
-          rclone rmdir e5:/E5-Rclone-Zip-Actions/
+          rclone mkdir e5:/E5-Rclone-Repo-Actions/
+          rclone move lsd.log e5:/E5-Rclone-Repo-Actions/
+          rclone delete e5:/E5-Rclone-Repo-Actions/lsd.log
+          rclone rmdir e5:/E5-Rclone-Repo-Actions/
       - name: Zip config #打包配置文件
         run: zip -P ${{ secrets.PASSWD }} rclone.zip -j ~/.config/rclone/rclone.conf
 
