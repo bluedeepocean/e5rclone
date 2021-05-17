@@ -1,4 +1,4 @@
-# E5-Rclone-Gist-Actions（仓库版）
+# E5-Rclone-Repo-Actions（仓库版）
 
 孪生项目：[E5-Rclone-Gist-Actions（Gist版）](https://github.com/ChirmyRam/E5-Rclone-Gist-Actions)，配置繁琐。
 
@@ -32,6 +32,6 @@ rclone添加OneDrive的教程不再赘述，需注意的是配置名应为**e5**
 
 - **Avoid workflow being suspended**：每月自动提交文件到仓库，防止因长期未提交文件造成actions被系统停止。
 
-- **E5-Rclone-Gist-Actions**：每天自动使用rclone上传文件到OneDrive。
+- **E5-Rclone-Repo-Actions**：每天自动使用rclone上传文件到OneDrive。
 
 顺手star一下自己的仓库手动触发actions。
